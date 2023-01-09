@@ -17,7 +17,7 @@ Any Astra script file is divided into blocks; there are three environment block 
 
 The general structure to follow is the next:
 ```
-start <block_type> <attribute_1> <attribute_2> ...
+Start <block_type> <attribute_1> <attribute_2> ...
    <my code...>  
 End <block_type>
 ```
@@ -25,7 +25,7 @@ If attributes are not specified, default attributes will be taken.
 
 The block type `space` defines the physical environment. 
 ```
-start space euclidean static
+Start space euclidean static
 
 End space
 ```
@@ -46,7 +46,7 @@ End output
 If the definition of a environment fits in one line, the end marker is optional. For instance this code would be valid:
 
 ```
-start space euclidean static
+Start space euclidean static
   <more definitions..>
 End space
 Start observer heliocentric
@@ -65,14 +65,14 @@ If we want `planet x` to exist in our defined space, we declare the object insid
 ```
 Start space
   planet x
-end space
+End space
 ```
 Any object that has a oficial name, can be referred by its constant (see list of constants). So we can declare 
 
 ```
 Start space
   Venus
-end space
+End space
 ```
 to create a euclidean space that hosts the planet Venus alone.
 
@@ -80,7 +80,7 @@ For example, the code
 ```
 Start space
   Venus
-end space
+End space
 
 Start observer heliocentric
  in front of Venus
