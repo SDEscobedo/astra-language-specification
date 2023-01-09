@@ -10,7 +10,7 @@ Astra defines its commands and sentences in such a way that they are most simila
 This is a [_**language specification**_](https://en.wikipedia.org/wiki/Programming_language_specification), which means that here is not chosen the programming language that should be used to create the interpreter, debugger or/and compiler. Any implementation that follows the rules presented in this document is an _Astra Language Implementation_.
 
 ## 1. Script Layout and environment blocks.
-Any Astra script file is divided into blocks; there are three environment block types: 
+Any Astra script file is divided into environment blocks; there are three block types: 
 + `space`
 + `observer`
 + `output`
